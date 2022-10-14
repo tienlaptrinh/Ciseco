@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear all;
+    outline: none; border: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    height: 5.4rem;
+    background: #fff;
+    padding: 4.2rem 8%;
+    z-index: 1000;
+}
+
+header a img {
+    width: 14rem;
+    height: auto;
+}
+
+header .nav > li {
+    list-style: none;
+    display: inline-block;
+}
+
+header .nav > li > a {
+    color: #000;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    margin-left: -.4rem;
+    line-height: 8.4rem;
+    font-weight: 700;
+}
+header .nav li a i {
+    font-size: 1rem;
+    margin-left: .8rem;
+    color: #ccc;
+}
+header .nav > li > a:hover {
+    border-radius: 3rem;
+    background: #F1F5F9;
+}
+
+header .header-icon i[class*="fas"]{
+    font-size: 2.4rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 50%;
+}
+
+header .header-icon i[class*="fas"]:hover {
+    background: #F1F5F9;
+}
+
+header .nav {
+    display: inline-block;
+}
+
+header .nav .subnav {
+    position: absolute;
+    top: 8.4rem; right: 0; left: 0;
+    padding: 4.2rem 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    justify-content: space-between;
+    border-top: .1rem solid #f1f1f1;
+    background: #fff;
+    display: none;
+}
+
+header .nav .subnav li {
+    list-style: none;
+    line-height: 2.8;
+    font-size: 1.6rem;
+}
+
+header .nav li:hover .subnav {
+    display: flex;
+}
+
+header .nav .subnav li a {
+    color: rgb(0, 0, 0, .8);
+}
+
+header .nav .subnav ul li:first-child {
+    color: #000;
+    font-weight: 700;
+}
+
+header .nav .subnav li a:hover {
+    color: #000;
+}
+
+.sale-banner {
+    width: 40rem;
+    height: 22.4rem;
+    background: #EFF6FF;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 3.2rem;
+}
+
+.sale-banner:hover {
+    background: #E6ECF5;
+}
+
+.sale-banner .sale-content {
+    font-size: 1.6rem;
+    flex: 1;
+    line-height: 1.5;
+}
+
+.sale-banner .sale-content h3 {
+    margin-top: .8rem;
+    font-size: 2.4rem;
+}
+
+.sale-banner .dog{
+    flex: 1;
+}
+
+.sale-banner img {
+    width: 50%;
+}
+
+.btn {
+    text-transform: none;
+    display: block;
+    width: 13.3rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 3rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: .1rem .1rem 1.2rem rgba(81, 81, 81, 0.2);
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+.new {
+    padding: 0 .4rem;
+    background: #F35656;
+    color: #fff;
+    border-radius: .5rem;
+    margin-left: .6rem;
+}
+
+.subnav_2,
+.subnav_3,
+.subnav_4,
+.subnav_5,
+.subnav_6 {
+    position: absolute;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
+    border-radius: .5rem;
+    width: 22rem;
+    padding: 2rem 1rem;
+    display: none;
+}
+
+.subnav_2 {
+    top: 8.4rem;
+}
+
+.subnav_2 li {
+    list-style: none;
+}
+
+.subnav_2 li a,
+.subnav_3 li a,
+.subnav_4 li a,
+.subnav_5 li a,
+.subnav_6 li a {
+    line-height: 2.8;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0, .8);;
+    display: block;
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+}
+
+.subnav_2 li a:hover,
+.subnav_3 li a:hover,
+.subnav_4 li a:hover,
+.subnav_5 li a:hover,
+.subnav_6 li a:hover {
+    background: #F1F5F9;
+}
+
+.nav > li:hover .subnav_2 {
+    display: block;
+}
+
+.subnav_2 li:hover .subnav_3,
+.subnav_2 li:hover .subnav_4,
+.subnav_2 li:hover .subnav_5,
+.subnav_2 li:hover .subnav_6 {
+    display: block;
+}
+
+.subnav_3 {
+    top: 11.2rem;
+    left: 23rem;
+}
+
+.subnav_4 {
+    top: 15.6rem;
+    left: 23rem;
+}
+
+.subnav_5 {
+    top: 38rem;
+    left: 23rem;
+}
+
+.subnav_6 {
+    top: 42.4rem;
+    left: 23rem;
+}
+
