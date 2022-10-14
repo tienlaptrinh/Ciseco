@@ -94,7 +94,8 @@ header .nav li:hover .subnav {
 }
 
 header .nav .subnav li a {
-    color: rgb(0, 0, 0, .8);
+    color: rgb(0, 0, 0, .7);
+    font-weight: 600;
 }
 
 header .nav .subnav ul li:first-child {
